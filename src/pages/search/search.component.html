@@ -1,0 +1,10 @@
+<ng-container *ngIf="state$ | async as state">
+  <!-- TODO Реализовать директиву для отображения состояния загрузки (интерфейс LoadableData) -->
+  <div *ngIf="state.state === LoadingState.loading">Loading...</div>
+  <!-- TODO Реализовать отображение списка загруженных данных -->
+  <!-- TODO Реализовать функцию добавления/исключения в закладки каждого элемента списка -->
+  <pre>
+    {{state.data | json}}
+  </pre>
+  <!-- TODO Реализовать кнопку с функцией загрузить еще -->
+</ng-container>
