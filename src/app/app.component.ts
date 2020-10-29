@@ -14,10 +14,6 @@ import {User} from './user';  // NEW
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
-  template: `<div>
-                <p>Имя пользователя: {{user?.name}}</p>
-                <p>Возраст пользователя: {{user?.age}}</p>
-             </div>`  // NEW
 })
 export class AppComponent implements OnInit{  // NEW implements OnInit
   public readonly navigationConfig: TabNavigatorConfig = [
