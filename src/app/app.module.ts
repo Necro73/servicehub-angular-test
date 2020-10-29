@@ -7,9 +7,11 @@ import { StateModule } from '../state/state.module';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+import { HttpClientModule } from '@angular/common/http'; // NEW
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     CommonModule,
@@ -17,9 +19,11 @@ import { AppComponent } from './app.component';
     AppRoutingModule,
     TabNavigatorModule,
     StateModule,
-    RouterModule
+    RouterModule,
+    HttpClientModule // NEW
   ],
   bootstrap: [AppComponent]
+
 })
 export class AppModule {
 }

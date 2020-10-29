@@ -1,9 +1,20 @@
-Search:
-<input type="text"
+<div class="divcss">
+  <form>
+
+    <input type="text"
+       placeholder="Найти"
        #input
        [value]="filter$ | async"
        (keyup)="setFilter(input.value)">
+    <button type="submit" class="bigbutton">Найти</button>
+  </form>
+</div>
 
 <app-tab-navigator [config]="navigationConfig"></app-tab-navigator>
 
 <router-outlet></router-outlet>
+
+<div>
+  <p>Имя пользователя: {{user?.name}}</p>
+  <p>Возраст пользователя: {{user?.age}}</p>
+</div>
